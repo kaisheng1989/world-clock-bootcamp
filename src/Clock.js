@@ -33,24 +33,12 @@ class Clock extends React.Component {
           <Col>{`${this.state.date.toLocaleString("ko-KR", {
             timeZone: this.props.timeZone,
           })}`}</Col>
+          
         </Row>
       </Container>
     );
   }
 }
 export default Clock;
-
-/*{
+/* Note: Prop is a object attribute in react. Taking from the Tz data base. 
  */
-
-/* 
-  } */
-
-/* return (
-    // Render date value that is stored in state
-    <p>
-      {`${this.props.timeZone}:${this.state.date.toLocaleString("ko-KR", {
-        timeZone: this.props.timeZone,
-      })}`}
-    </p>
-  );*/
